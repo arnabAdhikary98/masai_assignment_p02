@@ -1,1 +1,1 @@
-# masai_assignment_p02
+# Masai Investors Responsive Design
