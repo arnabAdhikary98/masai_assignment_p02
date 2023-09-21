@@ -1,0 +1,97 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#headBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    align-items: center;
+    font-size: 200%;
+}
+p{
+    text-align: center;
+    font-size: 130%;
+}
+.name{
+    font-weight: 700;
+}
+#headerImage{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2% 45% 2% 42%;
+}
+#contentBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+    margin: 2% 15% 2% 15%;
+}
+.contentBox{
+    border-radius: 2%;
+}
+.contentImage{
+    height: 100%;
+    width: 100%;
+    padding-top: 2%;
+}
+#content > div{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.logo{
+    height: 70%;
+    width: 50%;
+    padding-left: 25%;
+
+}
+
+@media screen and (max-width: 1024px) {
+    #content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2% 15% 2% 15%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    #headerImage{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 2% 60% 2% 56%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    #content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2% 15% 2% 15%;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    #headerImage{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 45% 2% 42%;
+    }
+    
+}
